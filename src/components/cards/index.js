@@ -17,7 +17,7 @@ function Cards() {
   };
   return (
     <div className="card">
-      {list.length &&
+      {list.length>0 &&
         list.map(({ preview, id, name, brand }) => (
           <div className="wrapper" key={id}>
             <Link to={`/card/${id}`}   >
